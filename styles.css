@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #71b4c9;
+}
+.round-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  height: 100vh;
+}
+.round {
+  border-radius: 50%;
+  animation: loading 2s linear infinite;
+  height: 100px;
+  width: 100px;
+}
+.one {
+  animation-delay: 0s;
+}
+.two {
+  animation-delay: 0.2s;
+}
+.three {
+  animation-delay: 0.6s;
+}
+.four {
+  animation-delay: 0.8s;
+}
+.five {
+  animation-delay: 1s;
+}
+@keyframes loading {
+  0% {
+    background-color: #cc1f50;
+    transform: scale(0.2);
+  }
+  20% {
+    background-color: #b03c5d;
+    transform: scale(0.2);
+  }
+  40% {
+    background-color: #a3435e;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #994266;
+    transform: scale(1);
+  }
+  80% {
+    background-color: #8a4c65;
+    transform: scale(0.2);
+  }
+  100% {
+    background-color: #6e4255;
+    transform: scale(0.2);
+  }
+}
